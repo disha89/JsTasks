@@ -104,3 +104,65 @@ const nuggets = 2;
 if (hamburgerr && cola || friess === 3 && nuggets) {
     console.log('Done!');
 }
+
+let vin = 60;
+
+while (vin <= 65) {
+    console.log(vin);
+    vin++;
+}
+
+let get = 70;
+
+do {
+    console.log(get);
+    get++;
+}
+
+
+
+while(get <= 80);
+
+for (let i = 1; i <= 10; i++) {
+    console.log(get);
+}
+
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+    for (let j = 0; j < 3; j++) {
+        console.log(j);
+    }
+}
+
+//*
+//** 
+//*** 
+//**** 
+//***** 
+//******
+
+let result = '';
+const length = 7;
+
+for (let i = 1; i < length; i++) {
+    
+    for (let j = 0; j < i; j++) {
+        result += '*';
+    }
+    
+    result += '\n';
+}
+
+console.log(result);
+
+
+ferst: for (let k = 1; k < 3; k++) {
+    console.log(`First Level: ${k}`);
+    for (let s = 0; s < 3; s++) {
+        console.log(`Second Level: ${s}`);
+        for (let t = 0; t < 3; t++) {
+            if (t === 2) continue ferst;
+            console.log(`Third Level: ${t}`);
+        } 
+    }
+}
