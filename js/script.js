@@ -166,3 +166,58 @@ ferst: for (let k = 1; k < 3; k++) {
         } 
     }
 }
+
+function firstTask() {
+    for (let u = 5; u < 11; u++) {
+    console.log(u);
+    } 
+} 
+
+firstTask();
+
+// Место для второй задачи
+function secondTask() {
+    let g = 20; 
+    for (; g > 9; g--) {
+        console.log(g);
+        if (g === 13) {
+            break;
+        }
+    }         
+}
+secondTask();
+// Место для третьей задачи
+function thirdTask() {
+    // Пишем решение вот тут
+    
+    
+}
+
+// Место для четвертой задачи
+
+// Цикл, который нужно переписать:
+
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+function fourthTask() {
+    // Пишем решение вот тут
+    
+    
+}
+// Место для пятой задачи
+
+function fifthTask() {
+    const arrayOfNumbers = [];
+
+    // Пишем решение вот тут
+    
+    
+    // Не трогаем
+    return arrayOfNumbers;
+}
