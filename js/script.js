@@ -175,7 +175,7 @@ function firstTask() {
 
 firstTask();
 
-// Место для второй задачи
+
 function secondTask() {
     let g = 20; 
     for (; g > 9; g--) {
@@ -186,38 +186,67 @@ function secondTask() {
     }         
 }
 secondTask();
-// Место для третьей задачи
+
 function thirdTask() {
-    // Пишем решение вот тут
-    
-    
+
+    for (let i = 1; i < 11; i++){
+        console.log(`Привет Гамно: ${i}`);
+        if (i % 2 - 1) {
+            console.log(i);
+        }
+    }
+}
+thirdTask();
+
+
+for (let i = 2; i <= 16; i++) {
+    if (i % 2 === 0) {
+        
+    } else {
+        console.log(i);
+    }
 }
 
-// Место для четвертой задачи
-
-// Цикл, который нужно переписать:
-
-// for (let i = 2; i <= 16; i++) {
-//     if (i % 2 === 0) {
-//         continue;
-//     } else {
-//         console.log(i);
-//     }
-// }
 
 function fourthTask() {
-    // Пишем решение вот тут
-    
-    
+        let i = 2;
+        while (i <= 16) {
+        if (i % 2 === 0){
+            i++;
+        } else {
+            console.log(i);
+            i++;
+        }
+    }
 }
-// Место для пятой задачи
+fourthTask();
+
 
 function fifthTask() {
     const arrayOfNumbers = [];
 
-    // Пишем решение вот тут
+    for (let i = 5; i < 11; i++) {
+        arrayOfNumbers[i - 5] = i;
+    }
+
+    console.log(arrayOfNumbers);
     
-    
-    // Не трогаем
     return arrayOfNumbers;
 }
+fifthTask();
+
+const lines = 5;
+let result = '';
+
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
+    }
+    for (let j = 0; j < 2 * i + 1; j++) {
+        result += "*";
+    }
+    result += "\n";
+}
+
+console.log(result);
+
