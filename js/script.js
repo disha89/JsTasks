@@ -250,3 +250,129 @@ for (let i = 0; i <= lines; i++) {
 
 console.log(result);
 
+let result = '';
+
+for (let i = 0; i < 10; i++) {
+    if (i < 10) {
+        result += 'Привет Как Вам Фильм?';
+    }
+    
+}
+console.log(result);
+
+let h = parseInt('5px') ,
+    g = parseInt('6px') ;
+console.log(g + h);
+
+let a = parseFloat('5.5px'),
+    l = parseFloat('6.25px');
+//   console.log(a + l + 'px');
+
+
+let j = parseInt('11px'),
+    o = parseFloat('15.7px');
+    alert(j + o +'px');
+
+let num1 = 15,
+    num2 = 17;
+console.log(String(num1) + String(num2));
+
+
+let nimb = 21456;
+
+// let str = String(nimb).length;
+
+console.log(String(nimb).length);
+
+let hot = 1234,
+    dog = 3214;
+
+let str = String(hot).length + String(dog).length;
+
+console.log(str);
+
+let str = 'abcde';
+
+console.log(str[0],str[2],str[4]);
+
+let strr = 'abcde';
+let djo = strr[4] + strr[3] + strr[2] + strr[1] + strr[0];
+
+console.log(djo);
+
+
+let str = 'abcde';
+let num = 3;
+
+console.log(str[num]);
+
+let stroka = 'asadgh';
+let last = stroka.length -1;
+
+console.log(stroka[last]);
+console.log(stroka[4]);
+
+let str = '12345';
+
+let summa =  Number(str[0]) + Number(str[1]) + Number(str[2]) + Number(str[3]) + Number(str[4]);
+
+console.log(summa);
+
+let num = String(12345);
+
+console.log(num[0] + num[1] + num[2] + num[3] + num[4]);
+
+let numb = String(12345);
+let numbSu = +numb[0] + +numb[1] + +numb[2] + +numb[3] + +numb[4];
+
+console.log(numbSu);
+
+let num = String(12345);
+let numSum = num[4] + num[3] + num[2] + num[1] + num[0];
+console.log(numSum);
+
+let num1 = 1;
+let num2 = 2;
+console.log('сумма: ' + +(num1 + num2));
+
+
+let a = 1;
+let b = 2;
+console.log(a + b);
+
+let num = '123';
+let sum = +num[0] + +num[1] + +num[2];
+console.log(sum);
+
+let num = String(123);
+console.log(+num[0]);
+
+let num = String(123);
+console.log(num.length);
+
+let a = 24 / 60 / 60;
+console.log(a.toFixed());
+
+let num = 123;
+let str = String(num);
+console.log(str.length);
+
+let num = 123;
+let str = String(num);
+console.log(str[2]);
+
+let num = 123;
+let str = String(num);
+console.log(str.length);
+
+let num = 123;
+let str = String(num);
+console.log(+str[2]);
+
+let a = '123';
+let b = '456';
+let s = Number(a) + Number(b);
+
+console.log(s);
+
+
