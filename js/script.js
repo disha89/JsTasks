@@ -375,4 +375,55 @@ let s = Number(a) + Number(b);
 
 console.log(s);
 
+let sut = (24 * 30) * (60 * 60);
+console.log(sut);
 
+let god = (365 * 24) * (60 * 60);
+console.log(god);
+
+let min = 24 * 60;
+console.log(min);
+
+let arr = ['a', 'b', 'c'];
+console.log(arr[0]); 
+console.log(arr[1]); 
+console.log(arr[2]); 
+
+let arr = ['a', 'b', 'c', 'd'];
+    arr[0] =  'a+b+c+d';
+    console.log(String(arr[0]));
+
+let agg = [1, 2, 3];
+console.log(agg[0] + agg[1] + agg[2]);
+
+let arr = [1, 3, 4, 6];
+let result = arr[0] * arr[1] + arr[2] * arr[3];
+console.log(result);
+
+
+let arr = [1, 2, 3, null, '', '2'];
+console.log(arr[arr.length - 1]);
+
+let arr = [1, 2, 3, 4];
+    arr[0] += 3;
+    arr[1] += -1;
+    arr[2] += -10;
+    arr[3] += '@#!$@!';
+console.log(arr);
+
+let arr = [1, 2, 3];
+    arr[0]++;
+    ++arr[1];
+    arr[2]++;
+console.log(arr);
+
+let arr = [1, 2, 3,];
+    arr[3] = 4;
+    arr[4] = 5;
+console.log(arr);
+
+let arr = [];
+
+    arr[3] = 'a';
+    arr[8] = 'b';
+console.log(arr.length);
