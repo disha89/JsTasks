@@ -145,11 +145,11 @@ let result = '';
 const length = 7;
 
 for (let i = 1; i < length; i++) {
-    
+
     for (let j = 0; j < i; j++) {
         result += '*';
     }
-    
+
     result += '\n';
 }
 
@@ -201,7 +201,7 @@ thirdTask();
 
 for (let i = 2; i <= 16; i++) {
     if (i % 2 === 0) {
-        
+
     } else {
         console.log(i);
     }
@@ -230,7 +230,7 @@ function fifthTask() {
     }
 
     console.log(arrayOfNumbers);
-    
+
     return arrayOfNumbers;
 }
 fifthTask();
@@ -256,7 +256,7 @@ for (let i = 0; i < 10; i++) {
     if (i < 10) {
         result += 'Привет Как Вам Фильм?';
     }
-    
+
 }
 console.log(result);
 
@@ -427,3 +427,58 @@ let arr = [];
     arr[3] = 'a';
     arr[8] = 'b';
 console.log(arr.length);
+
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+        b = prompt('На сколько оцените его?', '');
+
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
+    }
+}
+
+if (personalMovieDB.count < 10) {
+    console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("Вы классический зритель");
+} else if (personalMovieDB.count >= 30) {
+    console.log("Вы киноман");
+} else {
+    console.log("Произошла ошибка");
+}
+
+console.log(personalMovieDB);
+
+function showFirstMessage(text) {
+    console.log(text);
+}
+
+showFirstMessage('hello World');
+
+function calc(a, b) {
+    return a + b;
+}
+
+console.log(calc(7, 9));
+console.log(calc(3, 7));
+console.log(calc(71, 39));
+console.log(calc(0.9, 0.2));
+
+const calcl = (a, b) => {
+    console.log(calc(77, 15));
+    return a - b;            
+};
