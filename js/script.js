@@ -482,3 +482,76 @@ const calcl = (a, b) => {
     console.log(calc(77, 15));
     return a - b;            
 };
+
+const usdCurr = 28;
+const eurCurr = 32;
+
+function convert(amount, curr) {
+    console.log(curr * amount);
+}
+
+convert(500, usdCurr);
+convert(500, eurCurr);
+
+
+// function sayHello(text) {
+//     alert(text);
+//     return ; 
+// }
+
+// sayHello('Привет,Антон!');
+
+let arr = Array();
+
+function returnNeighboringNumbers(num = 6) {
+    num.arr += [5, 6, 8]; 
+    return;
+}
+
+returnNeighboringNumbers();
+
+function getMathResult(number, calc) {
+    for(let i = 0; i < 6; i++) {
+        console.log('1цикл')
+        for(let j = 0; j < i; j++ ) {
+
+        }
+    }
+}
+
+getMathResult(3, 5);
+
+function sayHello(name) {
+    return `Привет, ${name}!`;
+}
+
+sayHello('Alex');
+
+function returnNeighboringNumbers(num) {
+    return [num - 1, num, num + 1];
+}
+
+returnNeighboringNumbers(5);
+
+function getMathResult(num, times) {
+    if (typeof(times) !== 'number' || times <= 0) {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= times; i++) {
+        if (i === times) {
+            str += `${num * i}`;
+            // Тут без черточек в конце
+        } else {
+            str += `${num * i}---`;
+            // Это тоже самое, что и
+            // str = str + num * i + "---"
+        }
+    }
+
+    return str;
+}
+
+getMathResult(10, 5);
