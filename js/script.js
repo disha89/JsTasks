@@ -527,11 +527,11 @@ function sayHello(name) {
 
 sayHello('Alex');
 
-function returnNeighboringNumbers(num) {
+function eturnNeighboringNumbersr(num) {
     return [num - 1, num, num + 1];
 }
 
-returnNeighboringNumbers(5);
+eturnNeighboringNumbersr(15);
 
 function getMathResult(num, times) {
     if (typeof(times) !== 'number' || times <= 0) {
@@ -555,3 +555,51 @@ function getMathResult(num, times) {
 }
 
 getMathResult(10, 5);
+
+let obj = {
+    1:'пн', 2:'вт', 3:'ср', 4:'чт', 5:'пт', 6:'сб', 7:'вс'
+};
+
+console.log(obj[4]);
+
+let objj = {1:'a', 2:'b', 3:'c'};
+
+console.log(objj[1] + objj[2] + objj[3]);
+
+let objjj = {'1key': 'a', 'key-2': 'b', key3: 'c'};
+console.log(objjj['1key']);  // выведет 'a'
+console.log(objjj['key-2']); // выведет 'b'
+console.log(objjj['key3']);  // выведет 'c'
+
+let objjjj = {'1a':1, '2b':2, 'c-c':3};
+
+console.log(objjjj['1a'] + objjjj['2b'] + objjjj['c-c']);
+
+
+let Obj = {'1a': 1, 'b2': 2, 'eee-': 3, 'd4': 4};
+
+console.log(Obj['d4']);
+
+let user = {
+    name: 'Петр',
+    surname: 'Петров',
+    patronymic: 'Генадьевич'
+};
+
+console.log(user['name'] + ' ' + user['surname'] + ' ' + user['patronymic']);
+
+let date = {
+    year: 23,
+    maunts: 07,
+    day: 25
+};
+
+console.log(`${date['year']}-${date['maunts']}-${date['day']}`);
+
+let oBj = {};
+
+oBj[1] = 'Valera',
+oBj[3] = 2134,
+oBj[0] = 'Ha';
+
+console.log(oBj);
