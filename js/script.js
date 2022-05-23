@@ -603,3 +603,68 @@ oBj[3] = 2134,
 oBj[0] = 'Ha';
 
 console.log(oBj);
+
+let arr = ['a', 'b', 'c'];
+let key = 2;
+
+console.log(arr[key]);
+console.log(typeof arr[key]);
+
+let arr = [1, 2, 3, 4, 5];
+
+let key1 = 2;
+let key2 = 4;
+
+console.log(arr[key1] + arr[key2]);
+
+let obj = {'a': 1, 'b': 2, 'c': 3};
+
+let key = 'c';
+
+console.log(obj[key]);
+
+let obj = {text: '+++', key: '!!!'};
+let key = '';
+
+console.log(obj.key);
+
+let a = [1, 2, 3];
+let b = a;
+
+b[1] = '!'; 
+
+console.log(a[1]);
+console.log(typeof a);
+console.log(Array.isArray(a));
+
+const brand = 'Niva';
+const model = 'Chevrale';
+const color = 'blue';
+const year = 1999;
+
+let carHtml;
+
+carHtml = '<h3>' + 'Машина Мечты' + '</h3>' +
+'<ul>' +
+    '<li>brand: ' + brand + '</li>' +
+    '<li>model: ' + model + '</li>' +
+    '<li>color: ' + color + '</li>' +
+    '<li>year: ' + year + '</li>' +
+'</ul>';
+
+carHtml = `<h3> New Car  </h3>
+<ul>
+<li>brand: ${brand}</li>
+<li>model: ${model}</li>
+<li>color: ${color}</li>
+<li>year: ${year}</li>
+<li>years: ${2000 + 10}</li>
+<li>benzin: ${benz()}</li>
+<li>cuppon: ${year < 2000 ? '20%':'10%'}</li>
+</ul>`;
+
+function benz(){
+    return 92;
+}
+
+document.body.innerHTML = carHtml;
