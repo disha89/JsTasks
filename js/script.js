@@ -668,3 +668,54 @@ function benz(){
 }
 
 document.body.innerHTML = carHtml;
+
+let resalt;
+
+const firstName = prompt('What is your firstname?');
+const lastName = prompt('What is your lastname?');
+const myOld = prompt('How old are you?');
+
+resalt = 'Your name is ' + firstName  + '. Your last name is ' + lastName + '. Your old is ' + myOld + '.';
+resalt = `Your name is ${firstName}. Your last name is ${lastName}. Your old is ${myOld}.`;
+
+console.log(resalt);
+
+let x = 5;
+
+    x += 5;
+    x -= 2;
+    x *= 4;
+    x /= 4;
+    x **= 4;
+    x %= 4;
+    x++;
+    x--;
+
+console.log(x);
+
+
+let result;
+
+const massa = prompt('How much do you weigh?');
+const growth = prompt('How tall are you?');
+
+result = massa /(growth**2);
+console.log(result);
+
+let good = result <= 24.9;
+let notGood = result > 24.9;
+
+good = alert('Vse Klassno');
+notGood = alert('Not Good');
+
+const weight = prompt('How much do you weigh?');
+const height = prompt('How tall are you?');
+
+const bodyMassIndex = weight / Math.pow(height, 2);
+const areYouOverWeight = bodyMassIndex >= 25;
+console.log(bodyMassIndex);
+console.log(areYouOverWeight);
+
+alert('Are you Overweight? ' + areYouOverWeight);
+
+
