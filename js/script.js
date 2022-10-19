@@ -781,3 +781,20 @@ if (hasMoney && isAdult) {
 } else {
     console.log('You Can not Buy the drink.');
 }
+
+const color = 'green';
+
+switch(color) {
+    case ('red'):
+        console.log('Yes Red');
+        break;  
+    case ('green'):
+        console.log('Yes Green');
+        break;
+    case ('yellow'):
+        console.log('Yes Yellow');
+        break;
+    default:
+        console.log('Not Color');
+}
+
