@@ -798,3 +798,8 @@ switch(color) {
         console.log('Not Color');
 }
 
+const money = 100;
+const cost = 150;
+
+money >= cost ? console.log('I can buy it.') : console.log('I can not buy it.');
+
