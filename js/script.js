@@ -803,3 +803,9 @@ const cost = 150;
 
 money >= cost ? console.log('I can buy it.') : console.log('I can not buy it.');
 
+const age = prompt('Enter your age');
+
+const message = age >= 18 ? 'You can buy the alcohol' : 'You can not buy the alcohol, your are too young';
+
+console.log(message);
+alert(message);
