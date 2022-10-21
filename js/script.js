@@ -810,12 +810,34 @@
 // console.log(message);
 // alert(message);
 
-let commentForm = document.querySelector('.comment-form');
-let commentList = document.querySelector('.comment-list');
+// let commentForm = document.querySelector('.comment-form');
+// let commentList = document.querySelector('.comment-list');
 
-commentForm.onsubmit = function (evt) {
-    evt.preventDefault();
-};
+// commentForm.onsubmit = function (evt) {
+//     evt.preventDefault();
+// };
 
-let newComment = document.createElement('li');
-console.log(newComment);
+// let newComment = document.createElement('li');
+// console.log(newComment);
+
+function helloWorld() {
+    console.log('Hello World!');
+}
+
+helloWorld();
+helloWorld();
+helloWorld();
+helloWorld();
+
+function colorazed (item, color, number) {
+    console.log(item, color, number);
+    const colorazedItem = `The ${item} is ${color} ${number}.`;
+    console.log(colorazedItem);
+    return colorazedItem;
+}
+
+const messageFromColorazed = colorazed('desk', 'red', 58);
+console.log(`We have the following message: ${messageFromColorazed}`);
+
+const messageFromColorazed2 = colorazed('hand', 'green', 13);
+console.log(`We have the following message: ${messageFromColorazed2}`);
