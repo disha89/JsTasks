@@ -841,3 +841,18 @@ console.log(`We have the following message: ${messageFromColorazed}`);
 
 const messageFromColorazed2 = colorazed('hand', 'green', 13);
 console.log(`We have the following message: ${messageFromColorazed2}`);
+
+const myAge = (berthYear, yearNow) => yearNow - berthYear;
+
+const myAge2 = myAge(1999, 2023);
+console.log(myAge2);
+
+
+const canBuyAlcogol = (berthYear, yearNow) => {
+    const age = yearNow - berthYear;
+    const isPersonOlderThen18 = age >= 18 ? true : false;
+    return isPersonOlderThen18;
+};
+
+const resaltMyAge = canBuyAlcogol(1998, 2023);
+console.log(resaltMyAge);
