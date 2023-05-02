@@ -899,3 +899,48 @@ Object.defineProperties(currentProtectedData, {
 });
 currentProtectedData.allowed = 'readed';
 console.log(allProtectedData.allowed, currentProtectedData.allowed, currentProtectedData.notAllowed);
+
+const getAverage = (x, y, z) => (x + y + z) / 3;
+
+console.log(getAverage(1, 2, 3));
+
+The first quarter
+
+const dept1AverageSales1 = getAverage(35467, 29842, 38501);
+
+const dept2AverpgeSales1 = getAverage(70533, 50121, 33899);
+
+console.log(dept1AverageSales1, dept2AverpgeSales1);
+
+The second quarter
+
+const dept1AverageSales2 = getAverage(50301, 21984, 19207);
+
+const dept2AverageSales2 = getAverage(72381, 41562, 29465);
+
+console.log(dept1AverageSales2, dept2AverageSales2);
+
+const printBonus = function (dept1AverageSales, dept2AverageSales) {
+    if (dept1AverageSales > dept2AverageSales) {
+        const diff = dept1AverageSales - dept2AverageSales;
+        const percent = diff / dept2AverageSales * 100;
+    }
+    if (percent >= 30) {
+        console.log(`Dept 1 will get a bonus of ${percent}%`);
+    } else  {
+        console.log('No bonus in this quarter');
+    }
+    if (dept2AverageSales > dept1AverageSales) {
+        const diff = dept2AverageSales - dept1AverageSales;
+        const percent = diff / dept1AverageSales * 100;
+    }
+    if (percent >= 30) {
+        console.log(`Dept 1 will get a bonus of ${percent}%`);
+    } else {
+        console.log('No bonus in this quarter');
+    }
+};
+
+printBonus(dept1AverageSales1, dept2AverpgeSales1);
+
+printBonus(dept1AverageSales2, dept2AverageSales2);
